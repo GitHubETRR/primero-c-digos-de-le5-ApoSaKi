@@ -18,8 +18,8 @@ int main() {
         printf("Texto en minuscula: %s\n", Texto);
         printf("¿Quieres seguir?(1 para si y cualquier otro numero para no)");
         scanf("%d", &Seguir);
-        return 0;
     }while(Seguir==1);
+    return 0;
 }
 void PasaMinuscula(char Cadena[]) {
     int Indice = 0;
@@ -29,4 +29,5 @@ void PasaMinuscula(char Cadena[]) {
         }
         Indice++;
     }
+
 }
