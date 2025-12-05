@@ -26,8 +26,6 @@ int main() {
     CantidadVocales = Vocales(Texto);
     printf("Texto en minuscula: %s\n", Texto);
     printf("Cantidad de vocales: %d\n", CantidadVocales);
-    printf("¿Quieres seguir?(1 para si y cualquier otro numero para no)");
-    scanf("%d", &Seguir);
     return 0;
 }
 void PasaMinuscula(char Cadena[]) {
