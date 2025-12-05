@@ -9,16 +9,13 @@
 void PasaMinuscula(char Cadena[]);
 
 int main() {
-    int Seguir;
-    do{
-        char Texto[MaxLongitud];
-        printf("Ingrese un texto: ");
-        fgets(Texto, MaxLongitud, stdin);
-        PasaMinuscula(Texto);
-        printf("Texto en minuscula: %s\n", Texto);
-        printf("¿Quieres seguir?(1 para si y cualquier otro numero para no)");
-        scanf("%d", &Seguir);
-    }while(Seguir==1);
+    char Texto[MaxLongitud];
+    printf("Ingrese un texto: ");
+    fgets(Texto, MaxLongitud, stdin);
+    PasaMinuscula(Texto);
+    printf("Texto en minuscula: %s\n", Texto);
+    printf("¿Quieres seguir?(1 para si y cualquier otro numero para no)");
+    scanf("%d", &Seguir);
     return 0;
 }
 void PasaMinuscula(char Cadena[]) {
@@ -31,3 +28,4 @@ void PasaMinuscula(char Cadena[]) {
     }
 
 }
+
